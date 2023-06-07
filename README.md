@@ -12,23 +12,6 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 
 **Poznámka:** Výběr podle 3. kritéria je zpravidla nastaven tak, že v případě, kdy by položka doplňku Context Menu nějak kolidovala (například by ji dublovala) s položkou kontextového menu nějkého dalšího doplňku, tak je její zbrazení potlačeno. Příkladem ja např. dále uvedená položka Přehrát upoutávku. Stejná položka se nachází v kontextovém menu doplňku Stream Cinema Community (SCC), takže při zobrazení seznamu z SCC se v kontextovém menu položka Přehrát upoutávku z doplňku Context Menu nezobrazí.
 
-
-### Uživatelsky definované položky
-
-Doplněk umožňuje uživatelsky definovat další položky kontextového menu. V současné chvíli je možné definovat až 4 položky a každou z nich umístit do jedné ze čtyř pozic (viz Dostupné položky a jejich funkce níže). Pro každou položku je možné v nastavení doplňku definovat:
-
-- **Povolení položky** - povoluje její zobrazení ve zvolené pozici - defaultně Nepovoleno, tzn. položka nebude zobrazena
-- **Pozice** - definuje pozici zobrazení položky v jedné ze čtyř pozic označených jako Horní, 1/4, 3/4 a Dolní) - defaultně Nedefinovaná, tzn. položka nebude zobrazena
-- **Název** - označení položky v kontextovém menu - defaultně prázdný řetězec
-- **Styl** - stylu fontu názvu Normální, Tučné, Kurzíva a Tučná kurzíva - defaultně Normální
-- **Barva** - barva fontu názvu Bílá, Šedá, Modrá, Zelená, Žlutá a Červená - defaultně Bílá
-- **Příkaz** - Kodi built-in příkaz, který se vykoná při aktivaci položky kontexového menu - defaultně prázdný řetězec.
-
-K uvedeným parametrům dvě poznámky:
-
-1. Aby se daná položka v kontextovém menu zobrazila je třeba současně jak Povolení položky, tak vybrat jednu ze čtyř pozic jejího umístění (tedy jinou než defaultně Nedefinovaná)
-2. Seznam Kodi built-in příkazů najdete ve Wiki Kodi v [List of built-in functions](https://kodi.wiki/view/List_of_built-in_functions), v kombinaci s příkazem Action() je pak možné použít i [Action IDs](https://kodi.wiki/view/Action_IDs).
-
 ### Dostupné položky a jejich funkce
 
 - **Uživatelsky definované položky** - pozice označená jako **Horní**
@@ -49,7 +32,23 @@ K uvedeným parametrům dvě poznámky:
 - **Nastavení menu** - spustí funkci nastavení doplňku Context Menu
 - **Uživatelsky definované položky** - pozice označená jako **Dolní**
 
-## Funkce hledání
+### Uživatelsky definované položky
+
+Doplněk umožňuje uživatelsky definovat další položky kontextového menu. V současné chvíli je možné definovat až 4 položky a každou z nich umístit do jedné ze čtyř pozic (viz Dostupné položky a jejich funkce výše). Pro každou položku je možné v nastavení doplňku definovat:
+
+- **Povolení položky** - povoluje její zobrazení ve zvolené pozici - defaultně Nepovoleno, tzn. položka nebude zobrazena
+- **Pozice** - definuje pozici zobrazení položky v jedné ze čtyř pozic označených jako Horní, 1/4, 3/4 a Dolní) - defaultně Nedefinovaná, tzn. položka nebude zobrazena
+- **Název** - označení položky v kontextovém menu - defaultně prázdný řetězec
+- **Styl** - stylu fontu názvu Normální, Tučné, Kurzíva a Tučná kurzíva - defaultně Normální
+- **Barva** - barva fontu názvu Bílá, Šedá, Modrá, Zelená, Žlutá a Červená - defaultně Bílá
+- **Příkaz** - Kodi built-in příkaz, který se vykoná při aktivaci položky kontexového menu - defaultně prázdný řetězec.
+
+K uvedeným parametrům dvě poznámky:
+
+1. Aby se daná položka v kontextovém menu zobrazila je třeba současně jak Povolení položky, tak vybrat jednu ze čtyř pozic jejího umístění (tedy jinou než defaultně Nedefinovaná)
+2. Seznam Kodi built-in příkazů najdete ve Wiki Kodi v [List of built-in functions](https://kodi.wiki/view/List_of_built-in_functions), v kombinaci s příkazem Action() je pak možné použít i [Action IDs](https://kodi.wiki/view/Action_IDs).
+
+### Funkce hledání
 
 1. Funkce hledání má dva módy, které se volí v nastavení doplňku. Pokud je položka nastavení **- submenu hledat** ve stavu **VYPNUTO**, objeví se v kontetxovém menu se objeví všechny aktuálně zapnuté funkce hledání. Pokud je je položka nastavení **- submenu hledat** ve stavu **ZAPNUTO**, je v kontext menu vždy zobrazena pouze položka **Hledat...** Po její volbě se spustí funkce hledání a volba místa hledání uživatel provede v další posloupnosti funkcí.
 2. Funkci **Hledat** lze generálně vypnout pomocí stejnojmenné položky v nastavení. Nastavení ostatních parametrů zůstane uloženo, jen se v kontextovém menu žádné položka funkce hledání neobjeví.
@@ -59,7 +58,7 @@ K uvedeným parametrům dvě poznámky:
 6. Následuje tradiční virtuálni klávesnice, kde si uživatel může text editovat a pak si vybrat, co bude následovat. Pokud tady zvolí tlačítko **OK**, přejde se k dalšímu kroku, pokud **Zrušit**, funkce hledání se ukončí.
 7. Posledním krokem je spuštění vlastního vyhledávání. Pokud je nastaveno **- submenu hledat** na **VYPNUTO**, tak se hledání v daném místě spustí hned po zadání **OK** v předchozím bodu. Pokud je **- submenu hledat** nastaveno na **ZAPNUTO**, objeví se seznam obsahující všechna místa, kde je možné hledat a uživatel si z nich jedno vybere. Po výběru se hledání spustí.
 
-## ToDo
+### ToDo
 
 - hledání v Netflix - zatím nejisté, pravděpodobně to nepůjde
 - hledání v HBO - ani jsem nezačal
