@@ -1,0 +1,286 @@
+# XBMC Media Center language file
+# Addon Name: Context Menu
+# Addon id: script.contextmenu
+# Addon version: 0.1.9
+# Addon Provider: JiRo
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Report-Msgid-Bugs-To: ?\n"
+"POT-Creation-Date: 2020-07-22\n"
+"PO-Revision-Date: 2023-06-05\n"
+"Last-Translator: JiRo\n"
+"Language-Team: JiRo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Items selection"
+msgstr ""
+
+msgctxt "#30010"
+msgid "Background music by presentation "
+msgstr ""
+
+msgctxt "#30020"
+msgid "Play the trailer"
+msgstr ""
+
+msgctxt "#30021"
+msgid "Trailer"
+msgstr ""
+
+msgctxt "#30030"
+msgid "Title Review (CSFD)"
+msgstr ""
+
+msgctxt "#30040"
+msgid "ItemInfo"
+msgstr ""
+
+msgctxt "#30050"
+msgid "Search"
+msgstr ""
+
+msgctxt "#30051"
+msgid "Search..."
+msgstr ""
+
+msgctxt "#30052"
+msgid "submenu Search..."
+msgstr ""
+
+msgctxt "#30053"
+msgid "Select the search text"
+msgstr ""
+
+msgctxt "#30054"
+msgid "Enter or edit the search text"
+msgstr ""
+
+msgctxt "#30055"
+msgid "Search in SCC"
+msgstr ""
+
+msgctxt "#30056"
+msgid "Movies and TV Shows by title, actor, role, writer, director or studio"
+msgstr ""
+
+msgctxt "#30057"
+msgid "Search in Webshare"
+msgstr ""
+
+msgctxt "#30058"
+msgid "Files by názvu"
+msgstr ""
+
+msgctxt "#30059"
+msgid "Search in SC"
+msgstr ""
+
+msgctxt "#30060"
+msgid "Movies by name"
+msgstr ""
+
+msgctxt "#30061"
+msgid "Movies by actor name"
+msgstr ""
+
+msgctxt "#30062"
+msgid "TV Shows by name"
+msgstr ""
+
+msgctxt "#30063"
+msgid "TV Shows by actor name"
+msgstr ""
+
+msgctxt "#30064"
+msgid "Search in Youtube"
+msgstr ""
+
+msgctxt "#30065"
+msgid "Titles by name"
+msgstr ""
+
+msgctxt "#30066"
+msgid "Search in library"
+msgstr ""
+
+msgctxt "#30067"
+msgid "Movies and TV Shows by name"
+msgstr ""
+
+msgctxt "#30085"
+msgid "Genre"
+msgstr ""
+
+msgctxt "#30086"
+msgid "Director"
+msgstr ""
+
+msgctxt "#30087"
+msgid "Writer"
+msgstr ""
+
+msgctxt "#30088"
+msgid "Cast"
+msgstr ""
+
+msgctxt "#30089"
+msgid ""
+msgstr ""
+
+msgctxt "#30090"
+msgid "Content refresh"
+msgstr ""
+
+msgctxt "#30091"
+msgid "Addon setting"
+msgstr ""
+
+msgctxt "#30092"
+msgid "Menu setting"
+msgstr ""
+
+msgctxt "#30093"
+msgid "Setting"
+msgstr ""
+
+msgctxt "#30094"
+msgid "Kodi setting"
+msgstr ""
+
+msgctxt "#30095"
+msgid "Delete"
+msgstr ""
+
+msgctxt "#30100"
+msgid "SCC stream select for playing"
+msgstr ""
+
+msgctxt "#30101"
+msgid "PLAY Stream to [COLOR red]AUTO[/COLOR]"
+msgstr ""
+
+msgctxt "#30102"
+msgid "PLAY Stream to [COLOR green]MANUAL[/COLOR]"
+msgstr ""
+
+msgctxt "#30110"
+msgid "SCC stream select for downloading"
+msgstr ""
+
+msgctxt "#30111"
+msgid "DOWNLOAD Stream to [COLOR red]AUTO[/COLOR]"
+msgstr ""
+
+msgctxt "#30112"
+msgid "DOWNLOAD Stream to [COLOR green]MANUAL[/COLOR]"
+msgstr ""
+
+msgctxt "#30200"
+msgid "User items"
+msgstr ""
+
+msgctxt "#30201"
+msgid "Item enable"
+msgstr ""
+
+msgctxt "#30202"
+msgid "Position"
+msgstr ""
+
+msgctxt "#30203"
+msgid "Name"
+msgstr ""
+
+msgctxt "#30204"
+msgid "Style"
+msgstr ""
+
+msgctxt "#30205"
+msgid "Color"
+msgstr ""
+
+msgctxt "#30206"
+msgid "Built-in"
+msgstr ""
+
+msgctxt "#30210"
+msgid "Undefined"
+msgstr ""
+
+msgctxt "#30211
+msgid "Top"
+msgstr ""
+
+msgctxt "#30212"
+msgid "2/4"
+msgstr ""
+
+msgctxt "#30213"
+msgid "3/4"
+msgstr ""
+
+msgctxt "#30214"
+msgid "Bottom"
+msgstr ""
+
+msgctxt "#30220"
+msgid "Normal"
+msgstr ""
+
+msgctxt "#30221"
+msgid "[B]Bold[/B]"
+msgstr ""
+
+msgctxt "#30222"
+msgid "[I]Italics[/I]"
+msgstr ""
+
+msgctxt "#30223"
+msgid "[B][I]Bold italics[/B][/I]"
+msgstr ""
+
+msgctxt "#30230
+msgid "[COLOR white]White[/COLOR]"
+msgstr ""
+
+msgctxt "#30231
+msgid "[COLOR grey]Grey[/COLOR]"
+msgstr ""
+
+msgctxt "#30232
+msgid "[COLOR blue]Blue[/COLOR]"
+msgstr ""
+
+msgctxt "#30233
+msgid "[COLOR green]Green[/COLOR]"
+msgstr ""
+
+msgctxt "#30234
+msgid "[COLOR yellow]Yellow[/COLOR]"
+msgstr ""
+
+msgctxt "#30235
+msgid "[COLOR red]Red[/COLOR]"
+msgstr ""
+
+msgctxt "#30301"
+msgid "Item No.1"
+msgstr ""
+
+msgctxt "#30302"
+msgid "Item No.2"
+msgstr ""
+
+msgctxt "#30303"
+msgid "Item No.3"
+msgstr ""
+
+msgctxt "#30304"
+msgid "Item No.4"
+msgstr ""
