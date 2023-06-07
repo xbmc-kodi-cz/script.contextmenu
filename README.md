@@ -37,10 +37,10 @@ K uvedeným parametrům dvě poznámky:
 - **Uživatelsky definované položky** - pozice označená jako **1/4**
 - **Přehrát upoutávku** - spustí přehrávání upoutávky (trailer-u), pokud existuje. V tomto případě se (zatím) v doplňku nekontroluje, zda jsou případně k dispozici doplňky, kterými se upoutávky přehrávají (Youtube, Tubed atp.)
 - **Hledat...** - spustí funkce Hledat v případě, že je položka nastavení **- submenu hledat** ve stavu **ZAPNUTO**, viz popis funkce hledání dále
-- **Hledat v SCC** - spustí funkci Hledat z doplňku SCC - **Pozn. 1**, viz popis funkce hledání dále
-- **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - **Pozn. 1**, viz popis funkce hledání dále
-- **Hledat v SC** - spustí funkci Hledat z doplňku SC - **Pozn. 3**, viz popis funkce hledání dále
-- **Hledat na Youtube** - spustí funkci Hledat z doplňku Youtube - **Pozn. 2**, viz popis funkce hledání dále
+- **Hledat v SCC** - spustí funkci Hledat z doplňku SCC - viz popis funkce hledání dále
+- **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - viz popis funkce hledání dále
+- **Hledat v SC** - spustí funkci Hledat z doplňku SC - viz popis funkce hledání dále
+- **Hledat na Youtube** - spustí funkci Hledat z doplňku Youtube - viz popis funkce hledání dále
 - **Obnovení obsahu** - provede tzv. **Refresh**, tedy nové načtení aktuálně zobrazeného seznamu
 - **Odstranit** - u položky, kde je to v rámci Kodi možné a povolené, se provede její "odstranění". Odstraněním je míněná akce (Action ID Delete) v daném kontextu, dle typu a stavu položky. Pokdu není v daném kontextu tato akce definovaná, neprovede se samozřejmě nic.
 - **Uživatelsky definované položky** - pozice označená jako **3/4**
@@ -48,10 +48,6 @@ K uvedeným parametrům dvě poznámky:
 - **Nastavení Kodi** - spustí funkci nastavení Kodi
 - **Nastavení menu** - spustí funkci nastavení doplňku Context Menu
 - **Uživatelsky definované položky** - pozice označená jako **Dolní**
-
-- **Pozn. 1**: předpokládá instalovaný doplněk Stream Cinema Community
-- **Pozn. 2**: předpokládá instalovaný doplněk Youtube
-- **Pozn. 3**: předpokládá instalovaný doplněk Stream Cinema CZ a SK
 
 ## Funkce hledání
 
