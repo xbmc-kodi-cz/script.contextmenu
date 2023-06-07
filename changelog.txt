@@ -1,3 +1,6 @@
+v0.1.12 (2023-06-07)
+- fixed service error
+
 v0.1.11 (2023-06-07)
 - unblocking the context menu item "Search in addon" for items from the list of the same addon
 - reworking of the addon directories and files structure to standard Kodi addons form

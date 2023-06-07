@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.11" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.12" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -178,9 +178,8 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.11 (2023-06-07)
-- unblocking the context menu item "Search in addon" for items from the list of the same addon
-- reworking of the addon directories and files structure to standard Kodi addons form
+		<news>v0.1.12 (2023-06-07)
+- fixed service error
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
