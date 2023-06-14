@@ -19,6 +19,7 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 - **Automatický výběr streamu SCC pro stahování** - změní stav Automatický výběr streamu pro stahování v nastavení doplňku SCC v sekci Streamy. Funguje jako tzv. "toggle". Zároveň se v kontextovém menu zobrazuje stav do kterého se po jeho aktivaci nastavení přepne (AUTO/RUČNĚ).
 - **Uživatelsky definované položky** - pozice označená jako **1/4**
 - **Přehrát upoutávku** - spustí přehrávání upoutávky (trailer-u), pokud existuje. V tomto případě se (zatím) v doplňku nekontroluje, zda jsou případně k dispozici doplňky, kterými se upoutávky přehrávají (Youtube, Tubed atp.)
+- **Hledat upoutávku** - vyhledá v Youtube upoutávku podle titulu (i Originálního, pokud existuje) aktuání položky, text hledaného titulu, případně i originálního titulu, je v hledaném řetězci doplněn klíčovými slovy trailer a teaser
 - **Hledat...** - spustí funkce Hledat v případě, že je položka nastavení **- submenu hledat** ve stavu **ZAPNUTO**, viz popis funkce hledání dále
 - **Hledat v SCC** - spustí funkci Hledat z doplňku SCC - viz popis funkce hledání dále
 - **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - viz popis funkce hledání dále
@@ -34,7 +35,7 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 
 ### Uživatelsky definované položky
 
-Doplněk umožňuje uživatelsky definovat další položky kontextového menu. V současné chvíli je možné definovat až 4 položky a každou z nich umístit do jedné ze čtyř pozic (viz Dostupné položky a jejich funkce výše). Pro každou položku je možné v nastavení doplňku definovat:
+Doplněk umožňuje uživatelsky definovat další položky kontextového menu. V současné chvíli je možné definovat až 4 položky a každou z nich umístit do jedné ze čtyř pozic (viz **Dostupné položky a jejich funkce** výše). Pro každou položku je možné v nastavení doplňku definovat:
 
 - **Povolení položky** - povoluje její zobrazení ve zvolené pozici - defaultně Nepovoleno, tzn. položka nebude zobrazena
 - **Pozice** - definuje pozici zobrazení položky v jedné ze čtyř pozic označených jako Horní, 1/4, 3/4 a Dolní) - defaultně Nedefinovaná, tzn. položka nebude zobrazena
@@ -58,7 +59,7 @@ K uvedeným parametrům dvě poznámky:
 6. Následuje tradiční virtuálni klávesnice, kde si uživatel může text editovat a pak si vybrat, co bude následovat. Pokud tady zvolí tlačítko **OK**, přejde se k dalšímu kroku, pokud **Zrušit**, funkce hledání se ukončí.
 7. Posledním krokem je spuštění vlastního vyhledávání. Pokud je nastaveno **- submenu hledat** na **VYPNUTO**, tak se hledání v daném místě spustí hned po zadání **OK** v předchozím bodu. Pokud je **- submenu hledat** nastaveno na **ZAPNUTO**, objeví se seznam obsahující všechna místa, kde je možné hledat a uživatel si z nich jedno vybere. Po výběru se hledání spustí.
 
-### ToDo
+### To Do
 
 - hledání v Netflix - zatím nejisté, pravděpodobně to nepůjde
 - hledání v HBO - ani jsem nezačal
@@ -68,4 +69,6 @@ K uvedeným parametrům dvě poznámky:
 
 Doplněk je určen pouze pro Kodi verze 20 (Nexus) a případně vyšší. Důvodem je, že používá funkce, které jsou v Kodi dostupné právě od této verze. Úpravu doplňku pro nižší verze Kodi nepředpokládám.
 
-Doplněk se v Kodi instaluje do sekce Místní nabídky/Context Menus. Po první instalaci je třeba restartovat Kodi. Tento postup je třeba provést s ohledem na funkce Kodi, které jsou v tomto doplňku použity.
+Doplněk se instaluje z repozitáže **XBMC-Kodi CZ/SK repozitář**, verze minimálně **1.3.0**. Doplněk najdete v sekci repozitáře **Služby**. Po instalaci je doplněk pro správu dostupný v sekci **Místní nabídky** a **Služby**. Po první instalaci je třeba restartovat Kodi. Tento postup je třeba provést s ohledem na funkce Kodi, které jsou v tomto doplňku použity.
+
+Pokud jste před první instalací doplňku z repozitáře používali doplněk instalovaný ze zip, můžete ho bez problémů tím z repozitáře přeinstalovat. Po instalaci ale doporučuji provést restart Kodi. Po instalaci doplňku z repozitáře budou daší aktualizace probíhat, samozřejmě pokud to máte v Kodi i dopplňku nastavené, automaticky.

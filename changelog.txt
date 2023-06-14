@@ -1,3 +1,8 @@
+v0.1.13 (2023-06-14)
+- added item Search trailer (requires Youtube addon)
+- move ItemInfo to end of context menu (but ItemInfo not implemented yet - it is meessage for future only)
+- code cleanup (removing future features that will no longer be implemented)
+
 v0.1.12 (2023-06-07)
 - fixed service error
 

@@ -44,18 +44,17 @@ class Setting(XBMCMonitor):
     def getSettings(self):
         addon = xbmcaddon.Addon()
         for i in range(1, 5):
-            # setProperty((PROPERTY_PREFIX + ENABLE).format(i), getSettingStr((SETTINGS_PREFIX + ENABLE).format(i), addon).lower())
-            # setProperty((PROPERTY_PREFIX + POSITION).format(i), getSettingStr((SETTINGS_PREFIX + POSITION).format(i), addon))
             indexStyle = getSettingInt((SETTINGS_PREFIX + STYLE).format(i), addon)
             indexColor = getSettingInt((SETTINGS_PREFIX + COLOR).format(i), addon)
             rawName = getSettingStr((SETTINGS_PREFIX + NAME).format(i), addon)
             formatedName = COLOR_TABLE[indexColor][0] + STYLE_TABLE[indexStyle][0] + rawName + STYLE_TABLE[indexStyle][1] + COLOR_TABLE[indexColor][1]
-            # logNot('Item: {} Style: {} Color: {} rawName: {} formatedName: {}'.format(i, indexStyle, indexColor, rawName, formatedName))
             setProperty((PROPERTY_PREFIX + NAME).format(i), formatedName)
-            # setProperty((PROPERTY_PREFIX + COMMAND).format(i), getSettingStr((SETTINGS_PREFIX + COMMAND).format(i), addon))
         logNot('Settings loaded')
 
     def start(self):
+        i = 0
         monitor = xbmc.Monitor()
         while not monitor.abortRequested() and monitor.waitForAbort():
+            i += 1
+            logNot('{}'.format(i))
             pass

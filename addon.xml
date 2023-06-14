@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.12" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.13" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -63,13 +63,9 @@
 				<label>30020</label>
 				<visible>!String.IsEmpty(ListItem.Trailer) + !String.Contains(ListItem.Trailer,plugin://plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_play_trailer)</visible>
 			</item>
-			<item library="review.py" >
+			<item library="searchtrailer.py" >
 				<label>30030</label>
-				<visible>!String.IsEmpty(ListItem.PlotOutline) + Addon.SettingBool(script.contextmenu,enable_title_review)</visible>
-			</item>
-			<item library="iteminfo.py" >
-				<label>30040</label>
-				<visible>!String.IsEmpty(Container.Content) + Addon.SettingBool(script.contextmenu,enable_iteminfo)</visible>
+				<visible>System.AddonIsEnabled(plugin.video.youtube) + Addon.SettingBool(script.contextmenu,enable_search_trailer)</visible>
 			</item>
 			<item library="search.py" >
 				<label>30051</label>
@@ -139,6 +135,14 @@
 				<label>30092</label>
 				<visible>Addon.SettingBool(script.contextmenu,enable_self_setting)</visible>
 			</item>
+			<item library="iteminfo.py" >
+				<label>30040</label>
+				<visible>!String.IsEmpty(Container.Content) + Addon.SettingBool(script.contextmenu,enable_iteminfo)</visible>
+			</item>
+			<item library=".dump.py" >
+				<label>Item Dump</label>
+				<visible>Skin.HasSetting(easy_master)</visible>
+			</item>
 			<item library="command.py" args="@item1_command,1" >
 				<label>$INFO[Window(Home).Property(contextmenu_item1_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item1_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item1_position),1)</visible>
@@ -154,10 +158,6 @@
 			<item library="command.py" args="@item4_command,1" >
 				<label>$INFO[Window(Home).Property(contextmenu_item4_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item4_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item4_position),1)</visible>
-			</item>
-			<item library=".dump.py" >
-				<label>Item Dump</label>
-				<visible>Skin.HasSetting(easy_master)</visible>
 			</item>
 		</menu> 
 	</extension>
@@ -178,8 +178,10 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.12 (2023-06-07)
-- fixed service error
+		<news>v0.1.13 (2023-06-14)
+- added item Search trailer (requires Youtube addon)
+- move ItemInfo to end of context menu (but ItemInfo not implemented yet - it is meessage for future only)
+- code cleanup (removing future features that will no longer be implemented)
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>

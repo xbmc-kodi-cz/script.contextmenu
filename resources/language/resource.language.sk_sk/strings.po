@@ -1,14 +1,14 @@
 # XBMC Media Center language file
 # Addon Name: Context Menu
 # Addon id: script.contextmenu
-# Addon version: 0.1.9
+# Addon version: 0.1.13
 # Addon Provider: JiRo
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: ?\n"
 "POT-Creation-Date: 2023-05-03\n"
-"PO-Revision-Date: 2023-06-05\n"
+"PO-Revision-Date: 2023-06-14\n"
 "Last-Translator: JiRo\n"
 "Language-Team: JiRo\n"
 "MIME-Version: 1.0\n"
@@ -34,8 +34,8 @@ msgid "Trailer"
 msgstr "Upútavka"
 
 msgctxt "#30030"
-msgid "Title Review (CSFD)"
-msgstr "Hodnotenie titulu (CSFD)"
+msgid "Search trailer"
+msgstr "Hľadať upútavku"
 
 msgctxt "#30040"
 msgid "ItemInfo"

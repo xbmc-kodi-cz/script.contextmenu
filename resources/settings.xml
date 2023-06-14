@@ -5,9 +5,8 @@
         <setting label="30110" id="enable_select_stream.download" type="bool" default="false" enable="System.AddonIsEnabled(plugin.video.stream-cinema-2-release)" />
 		<setting type="lsep"/>
         <setting label="30010" id="enable_background_music" type="bool" default="false" enable="System.AddonIsEnabled(script.backgroundmusic)" />
-        <setting label="30020" id="enable_play_trailer" type="bool" default="false" enable="true" />
-        <setting label="30030" id="enable_title_review" type="bool" default="false" enable="false" visible="false" />
-        <setting label="30040" id="enable_iteminfo" type="bool" default="false" enable="false" visible="false" />
+        <setting label="30020" id="enable_play_trailer" type="bool" default="false" />
+        <setting label="30030" id="enable_search_trailer" type="bool" default="false" enable="System.AddonIsEnabled(plugin.video.youtube)" />
 		<setting type="lsep"/>
         <setting label="30050" id="enable_search" type="bool" default="true" />
         <setting label="30052" subsetting="true" id="common_item_search" type="bool" default="false" enable="eq(-1,true)" />
@@ -17,12 +16,13 @@
         <setting label="30064" id="enable_search_yt" type="bool" default="false" enable="eq(-5,true)" visible="System.AddonIsEnabled(plugin.video.youtube)" />
         <setting label="30066" id="enable_search_library" type="bool" default="false" enable="eq(-6,true)" visible="false" />
 		<setting type="lsep"/>
-        <setting label="30090" id="enable_content_refresh" type="bool" default="true" enable="true" />
-        <setting label="30095" id="enable_delete" type="bool" default="false" enable="true" />
+        <setting label="30090" id="enable_content_refresh" type="bool" default="true" />
+        <setting label="30095" id="enable_delete" type="bool" default="false" />
 		<setting type="lsep"/>
-        <setting label="30091" id="enable_addon_setting" type="bool" default="true" enable="true" />
-        <setting label="30094" id="enable_setting" type="bool" default="true" enable="true" />
-        <setting label="30092" id="enable_self_setting" type="bool" default="true" enable="true" />
+        <setting label="30091" id="enable_addon_setting" type="bool" default="true" />
+        <setting label="30094" id="enable_setting" type="bool" default="true" />
+        <setting label="30092" id="enable_self_setting" type="bool" default="true" />
+        <setting label="30040" id="enable_iteminfo" type="bool" default="false" enable="false" visible="false" />
 	</category>
 	<category label="30200">
 		<setting label="30301" type="lsep"/>

@@ -103,6 +103,19 @@ def unique(items):
             uniqueItems.append(item)
     return uniqueItems
 
+def setUrl(value, url = None, addon = None, encode = None):
+    if url == None:
+        url = COMMON_BUILTIN
+    if encode == None:
+        if addon == None:
+            return url.format(value)
+        else:
+            return url.format(addon, value)
+    if encode == 'HEX':
+        return url.format(value).encode("utf-8").hex()
+    else:
+        logErr('Unknown encode format: {}'.format(encode))
+
 def selectPattern():
     item = sys.listitem
     info = item.getVideoInfoTag()
@@ -153,3 +166,25 @@ def selectPattern():
         pattern = pattern + '{} '.format(selectedPattern)
     return pattern.strip()
 
+def buildYtPattern():
+    tempPattern = ''
+    item = sys.listitem
+    info = item.getVideoInfoTag()
+
+    def addString(pattern, unique = True):
+        if not (pattern in patterns and unique) and len(pattern) > 0:
+            patterns.append(pattern)
+
+    addString(textCleaning(info.getTVShowTitle()))
+    addString(textCleaning(xbmc.getInfoLabel('ListItem.Title')))
+    addString(textCleaning(info.getTitle()))
+    addString(textCleaning(xbmc.getInfoLabel('ListItem.Label')))
+    addString(textCleaning(xbmc.getInfoLabel('ListItem.Title')))
+    addString(textCleaning(info.getOriginalTitle()))
+    addString(textCleaning(xbmc.getInfoLabel('ListItem.OriginalTitle')))
+    for pattern in patterns:
+        tempPattern = tempPattern + '{} '.format(pattern)
+    pattern = ('{} trailer teaser'.format(tempPattern.strip()))
+    # logNot('Pattern: {}'.format(pattern))
+
+    return pattern.strip()
