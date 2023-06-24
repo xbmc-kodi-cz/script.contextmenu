@@ -1,3 +1,7 @@
+v0.1.14 (2023-06-24)
+- added two User item positions (-1/2 and +1/2)
+- added display of User items enable state in Items selection setting page
+
 v0.1.13 (2023-06-14)
 - added item Search trailer (requires Youtube addon)
 - move ItemInfo to end of context menu (but ItemInfo not implemented yet - it is meessage for future only)

@@ -1,14 +1,14 @@
 # XBMC Media Center language file
 # Addon Name: Context Menu
 # Addon id: script.contextmenu
-# Addon version: 0.1.13
+# Addon version: 0.1.14
 # Addon Provider: JiRo
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: ?\n"
 "POT-Creation-Date: 2020-07-22\n"
-"PO-Revision-Date: 2023-06-14\n"
+"PO-Revision-Date: 2023-06-24\n"
 "Last-Translator: JiRo\n"
 "Language-Team: JiRo\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgid "Items selection"
 msgstr ""
 
 msgctxt "#30010"
-msgid "Background music by presentation "
+msgid "Background music"
 msgstr ""
 
 msgctxt "#30020"
@@ -218,14 +218,22 @@ msgid "Top"
 msgstr ""
 
 msgctxt "#30212"
-msgid "2/4"
+msgid "1/4"
 msgstr ""
 
 msgctxt "#30213"
-msgid "3/4"
+msgid "-1/2"
 msgstr ""
 
 msgctxt "#30214"
+msgid "+1/2"
+msgstr ""
+
+msgctxt "#30215"
+msgid "3/4"
+msgstr ""
+
+msgctxt "#30216"
 msgid "Bottom"
 msgstr ""
 
@@ -270,17 +278,17 @@ msgid "[COLOR red]Red[/COLOR]"
 msgstr ""
 
 msgctxt "#30301"
-msgid "Item No.1"
+msgid "User item No.1"
 msgstr ""
 
 msgctxt "#30302"
-msgid "Item No.2"
+msgid "User item No.2"
 msgstr ""
 
 msgctxt "#30303"
-msgid "Item No.3"
+msgid "User item No.3"
 msgstr ""
 
 msgctxt "#30304"
-msgid "Item No.4"
+msgid "User item No.4"
 msgstr ""
