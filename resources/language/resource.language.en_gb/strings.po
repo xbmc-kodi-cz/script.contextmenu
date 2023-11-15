@@ -1,14 +1,14 @@
 # XBMC Media Center language file
 # Addon Name: Context Menu
 # Addon id: script.contextmenu
-# Addon version: 0.1.14
+# Addon version: 0.1.15
 # Addon Provider: JiRo
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: ?\n"
 "POT-Creation-Date: 2020-07-22\n"
-"PO-Revision-Date: 2023-06-24\n"
+"PO-Revision-Date: 2023-11-15\n"
 "Last-Translator: JiRo\n"
 "Language-Team: JiRo\n"
 "MIME-Version: 1.0\n"
@@ -54,63 +54,87 @@ msgid "submenu Search..."
 msgstr ""
 
 msgctxt "#30053"
-msgid "Select the search text"
+msgid "don't select the search text item (the title is used)"
 msgstr ""
 
 msgctxt "#30054"
-msgid "Enter or edit the search text"
+msgid "don't edit the search text"
 msgstr ""
 
 msgctxt "#30055"
-msgid "Search in SCC"
+msgid "Select the search text"
 msgstr ""
 
 msgctxt "#30056"
-msgid "Movies and TV Shows by title, actor, role, writer, director or studio"
-msgstr ""
-
-msgctxt "#30057"
-msgid "Search in Webshare"
+msgid "Enter or edit the search text"
 msgstr ""
 
 msgctxt "#30058"
-msgid "Files by názvu"
+msgid "Search in SCC"
 msgstr ""
 
 msgctxt "#30059"
-msgid "Search in SC"
+msgid "Movies and TV Shows by title, actor, role, writer, director or studio"
 msgstr ""
 
 msgctxt "#30060"
-msgid "Movies by name"
+msgid "Search in Webshare"
 msgstr ""
 
 msgctxt "#30061"
-msgid "Movies by actor name"
+msgid "Files by názvu"
 msgstr ""
 
 msgctxt "#30062"
-msgid "TV Shows by name"
+msgid "Search in SC"
 msgstr ""
 
 msgctxt "#30063"
-msgid "TV Shows by actor name"
+msgid "Movies by name"
 msgstr ""
 
 msgctxt "#30064"
-msgid "Search in Youtube"
+msgid "Movies by actor name"
 msgstr ""
 
 msgctxt "#30065"
-msgid "Titles by name"
+msgid "TV Shows by name"
 msgstr ""
 
 msgctxt "#30066"
-msgid "Search in library"
+msgid "TV Shows by actor name"
 msgstr ""
 
 msgctxt "#30067"
+msgid "Search in Youtube"
+msgstr ""
+
+msgctxt "#30068"
+msgid "Titles by name"
+msgstr ""
+
+msgctxt "#30069"
+msgid "Search in library"
+msgstr ""
+
+msgctxt "#30070"
 msgid "Movies and TV Shows by name"
+msgstr ""
+
+msgctxt "#30071"
+msgid "Search in Netflix"
+msgstr ""
+
+msgctxt "#30072"
+msgid "Search titles, people, genres"
+msgstr ""
+
+msgctxt "#30073"
+msgid "Search in HBO Max"
+msgstr ""
+
+msgctxt "#30074"
+msgid "Search"
 msgstr ""
 
 msgctxt "#30085"

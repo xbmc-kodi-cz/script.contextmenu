@@ -8,7 +8,7 @@ import re
 
 from resources.lib.utils import localizedStr, logNot, logErr
 
-TEXT_SELECT_PATTERN = 30053
+TEXT_SELECT_PATTERN = 30055
 TEXT_GENRE = 30085
 TEXT_DIRECTOR = 30086
 TEXT_WRITER = 30087
@@ -116,7 +116,7 @@ def setUrl(value, url = None, addon = None, encode = None):
     else:
         logErr('Unknown encode format: {}'.format(encode))
 
-def selectPattern():
+def selectPattern(onlyTitle = False):
     item = sys.listitem
     info = item.getVideoInfoTag()
     
@@ -151,6 +151,9 @@ def selectPattern():
     # logNot('ListItem.Artist: {}'.format(xbmc.getInfoLabel('ListItem.Artist')))
     # logNot('ListItem.Cast: {}'.format(xbmc.getInfoLabel('ListItem.Cast')))
     # logNot('ListItem.CastAndRole: {}'.format(xbmc.getInfoLabel('ListItem.CastAndRole')))
+    
+    if onlyTitle:
+        return patterns[0]
 
     dialog = xbmcgui.Dialog()
     select = dialog.multiselect(localizedStr(TEXT_SELECT_PATTERN), patternList)

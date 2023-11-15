@@ -1,3 +1,7 @@
+v0.1.15 (2023-11-13)
+- added search in Netflix
+- added other settings for search functions
+
 v0.1.14 (2023-06-24)
 - added two User item positions (-1/2 and +1/2)
 - added display of User items enable state in Items selection setting page
@@ -62,5 +66,5 @@ v0.1.0 (2023-04-21)
 - first public commit
 - pre-Alpha version
 Limitations and assumptions:
-- instation method - zip only
+- instalation method - zip only
 - czech only

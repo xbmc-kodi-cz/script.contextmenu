@@ -1,14 +1,14 @@
 # XBMC Media Center language file
 # Addon Name: Context Menu
 # Addon id: script.contextmenu
-# Addon version: 0.1.14
+# Addon version: 0.1.15
 # Addon Provider: JiRo
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: ?\n"
 "POT-Creation-Date: 2023-05-03\n"
-"PO-Revision-Date: 2023-06-24\n"
+"PO-Revision-Date: 2023-11-15\n"
 "Last-Translator: JiRo\n"
 "Language-Team: JiRo\n"
 "MIME-Version: 1.0\n"
@@ -54,64 +54,84 @@ msgid "submenu Search..."
 msgstr "submenu Hľadať..."
 
 msgctxt "#30053"
+msgid "don't select the search text item (the title is used)"
+msgstr "nevyberať položku hľadaného textu (použije sa titul)"
+
+msgctxt "#30054"
+msgid "don't edit the search text"
+msgstr "neupravovať hľadaný text"
+
+msgctxt "#30055"
 msgid "Select the search text"
 msgstr "Vyberte hľadaný text"
 
-msgctxt "#30054"
+msgctxt "#30056"
 msgid "Enter or edit the search text"
 msgstr "Zadajte alebo upravte hľadaný text"
 
-msgctxt "#30055"
+msgctxt "#30058"
 msgid "Search in SCC"
 msgstr "Hľadať v SCC"
 
-msgctxt "#30056"
+msgctxt "#30059"
 msgid "Movies and TV Shows by title, actor, role, writer, director or studio"
 msgstr "Filmy a seriály podľa názvu, herca, role, autora, režiséra alebo štúdia"
 
-msgctxt "#30057"
+msgctxt "#30060"
 msgid "Search in Webshare"
 msgstr "Hľadať na Webshare"
 
-msgctxt "#30058"
+msgctxt "#30061"
 msgid "Files by názvu"
 msgstr "Súbory podľa názvu"
 
-msgctxt "#30059"
+msgctxt "#30062"
 msgid "Search in SC"
 msgstr "Hľadať v SC"
 
-msgctxt "#30060"
+msgctxt "#30063"
 msgid "Movies by name"
 msgstr "Filmy podľa názvu"
 
-msgctxt "#30061"
+msgctxt "#30064"
 msgid "Movies by actor name"
 msgstr "Filmy podľa mena herca"
 
-msgctxt "#30062"
+msgctxt "#30065"
 msgid "TV Shows by name"
 msgstr "Seriály podľa názvu"
 
-msgctxt "#30063"
+msgctxt "#30066"
 msgid "TV Shows by actor name"
 msgstr "Seriály podľa mena herca"
 
-msgctxt "#30064"
+msgctxt "#30067"
 msgid "Search in Youtube"
 msgstr "Hľadať na Youtube"
 
-msgctxt "#30065"
+msgctxt "#30068"
 msgid "Titles by name"
 msgstr "Tituly podľa názvu"
 
-msgctxt "#30066"
+msgctxt "#30069"
 msgid "Search in library"
 msgstr "Hľadať v knižnici"
 
-msgctxt "#30067"
+msgctxt "#30070"
 msgid "Movies and TV Shows by name"
 msgstr "Filmy a seriály podľa názvu"
+
+msgctxt "#30071"
+msgid "Search in Netflix"
+msgstr "Hľadať na Netflix"
+
+msgctxt "#30072"
+msgid "Search titles, people, genres"
+msgstr "Hľadajte tituly, ľudí, žánre"
+
+msgctxt "#30073"
+msgid "Search in HBO Max"
+msgstr "Hľadať na HBO Max"
 
 msgctxt "#30085"
 msgid "Genre"

@@ -9,7 +9,7 @@ from resources.lib.utils import getParam, getSettingBool, localizedStr, logNot, 
 from resources.lib.patterns import selectPattern
 
 TEXT_SEARCH_HEADER = 30051
-TEXT_SEARCH_PROMPT = 30054
+TEXT_SEARCH_PROMPT = 30056
 
 COMMON_BUILTIN = 'ActivateWindow(videos,plugin://{}{},return)'
 
@@ -32,6 +32,16 @@ SC_URLS = [
 '/Search/search-people-series?search={0}&id=search-people'
 ]
 
+NETFLIX_ADDON = 'plugin.video.netflix'
+NETFLIX_ENABLE = 'enable_search_netflix'
+NETFLIX_COMMAND =  '/{}'
+NETFLIX_URL = 'directory/search/search/?query={0}/'
+
+HBO_ADDON = 'slyguy.hbo.max'
+HBO_ENABLE = 'enable_search_hbo'
+HBO_COMMAND =  ''
+HBO_URL = ''
+
 YT_ADDON = 'plugin.video.youtube'
 YT_ENABLE = 'enable_search_yt'
 YT_COMMAND = '/kodion/search/query/?{}'
@@ -48,13 +58,14 @@ BUILTIN = 7
 ENCODE = 8
 
 PARAMETERS = [
-['scc', SCC_ADDON, SCC_ENABLE, 30055, 30056, SCC_URL, SCC_COMMAND, None, None],
-['ws', SCC_ADDON, WS_ENABLE, 30057, 30058, WS_URL, WS_COMMAND, None, None],
-['sc', SC_ADDON, SC_ENABLE, 30059, 30060, SC_URLS[0], SC_COMMAND, None, 'HEX'],
-['sc', SC_ADDON, SC_ENABLE, 30059, 30061, SC_URLS[1], SC_COMMAND, None, 'HEX'],
-['sc', SC_ADDON, SC_ENABLE, 30059, 30062, SC_URLS[2], SC_COMMAND, None, 'HEX'],
-['sc', SC_ADDON, SC_ENABLE, 30059, 30063, SC_URLS[3], SC_COMMAND, None, 'HEX'],
-['yt', YT_ADDON, YT_ENABLE, 30064, 30065, YT_URL, YT_COMMAND, None, None]
+['scc', SCC_ADDON, SCC_ENABLE, 30058, 30059, SCC_URL, SCC_COMMAND, None, None],
+['ws', SCC_ADDON, WS_ENABLE, 30060, 30061, WS_URL, WS_COMMAND, None, None],
+['sc', SC_ADDON, SC_ENABLE, 30062, 30063, SC_URLS[0], SC_COMMAND, None, 'HEX'],
+['sc', SC_ADDON, SC_ENABLE, 30062, 30064, SC_URLS[1], SC_COMMAND, None, 'HEX'],
+['sc', SC_ADDON, SC_ENABLE, 30062, 30065, SC_URLS[2], SC_COMMAND, None, 'HEX'],
+['sc', SC_ADDON, SC_ENABLE, 30062, 30066, SC_URLS[3], SC_COMMAND, None, 'HEX'],
+['netflix', NETFLIX_ADDON, NETFLIX_ENABLE, 30071, 30072, NETFLIX_URL, NETFLIX_COMMAND, None, None],
+['yt', YT_ADDON, YT_ENABLE, 30067, 30068, YT_URL, YT_COMMAND, None, None]
 ]
 
 def getText(default, title):
@@ -69,13 +80,8 @@ def nothingToDo():
 def parametersInit(parameters):
     params = []
     for param in parameters:
-        try:
-            addon = xbmcaddon.Addon(param[ADDON])
-        except:
-            continue
-        else:
-            if not getSettingBool(param[ENABLE]):
-                continue
+        if getSettingBool(param[ENABLE]) and xbmc.getCondVisibility('System.AddonIsEnabled({})'.format(param[ADDON])):
+            # logNot('addon {} is enabeld'.format(param[ADDON]))
             params.append(param)
     return params
 
@@ -96,7 +102,13 @@ if __name__ == '__main__':
     whereToSearch = getParam(1)
     logNot('whereToSearch: {}'.format(whereToSearch))
     parameters = parametersInit(PARAMETERS)
-    goSearch, searchString = getText(selectPattern(), localizedStr(TEXT_SEARCH_PROMPT))
+    pattern = selectPattern(getSettingBool('no_pattern_select'))
+    logNot('pattern: {}'.format(pattern))
+    if getSettingBool('no_text_edit'):
+        searchString = pattern
+        goSearch = len(searchString) > 0
+    else:
+        goSearch, searchString = getText(pattern, localizedStr(TEXT_SEARCH_PROMPT))
     if goSearch:
         dialog = xbmcgui.Dialog()
         if getSettingBool('common_item_search'):
@@ -107,7 +119,7 @@ if __name__ == '__main__':
                 item = xbmcgui.ListItem(label=label, label2=label2)
                 item.setArt({'icon': mediaFile(parameter[WHERE], 'png')})
                 items.append(item)
-            select = dialog.select('Hledat...', items, useDetails = True)
+            select = dialog.select(localizedStr(TEXT_SEARCH_HEADER), items, useDetails = True)
         else:
             # parameters = list(filter(lambda p: p[0] == whereToSearch, parameters))
             parameters = list([p for p in parameters if p[0] == whereToSearch])

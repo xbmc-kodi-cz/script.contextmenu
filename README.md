@@ -20,11 +20,14 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 - **Uživatelsky definované položky** - pozice označená jako **1/4**
 - **Přehrát upoutávku** - spustí přehrávání upoutávky (trailer-u), pokud existuje. V tomto případě se (zatím) v doplňku nekontroluje, zda jsou případně k dispozici doplňky, kterými se upoutávky přehrávají (Youtube, Tubed atp.)
 - **Hledat upoutávku** - vyhledá v Youtube upoutávku podle titulu (i Originálního, pokud existuje) aktuání položky, text hledaného titulu, případně i originálního titulu, je v hledaném řetězci doplněn klíčovými slovy trailer a teaser
+- **Uživatelsky definované položky** - pozice označená jako **-1/2**
 - **Hledat...** - spustí funkce Hledat v případě, že je položka nastavení **- submenu hledat** ve stavu **ZAPNUTO**, viz popis funkce hledání dále
 - **Hledat v SCC** - spustí funkci Hledat z doplňku SCC - viz popis funkce hledání dále
 - **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - viz popis funkce hledání dále
 - **Hledat v SC** - spustí funkci Hledat z doplňku SC - viz popis funkce hledání dále
+- **Hledat v Netflix** - spustí funkci Hledat z doplňku Netflix - viz popis funkce hledání dále
 - **Hledat na Youtube** - spustí funkci Hledat z doplňku Youtube - viz popis funkce hledání dále
+- **Uživatelsky definované položky** - pozice označená jako **+1/2**
 - **Obnovení obsahu** - provede tzv. **Refresh**, tedy nové načtení aktuálně zobrazeného seznamu
 - **Odstranit** - u položky, kde je to v rámci Kodi možné a povolené, se provede její "odstranění". Odstraněním je míněná akce (Action ID Delete) v daném kontextu, dle typu a stavu položky. Pokdu není v daném kontextu tato akce definovaná, neprovede se samozřejmě nic.
 - **Uživatelsky definované položky** - pozice označená jako **3/4**
@@ -54,14 +57,13 @@ K uvedeným parametrům dvě poznámky:
 1. Funkce hledání má dva módy, které se volí v nastavení doplňku. Pokud je položka nastavení **- submenu hledat** ve stavu **VYPNUTO**, objeví se v kontetxovém menu se objeví všechny aktuálně zapnuté funkce hledání. Pokud je je položka nastavení **- submenu hledat** ve stavu **ZAPNUTO**, je v kontext menu vždy zobrazena pouze položka **Hledat...** Po její volbě se spustí funkce hledání a volba místa hledání uživatel provede v další posloupnosti funkcí.
 2. Funkci **Hledat** lze generálně vypnout pomocí stejnojmenné položky v nastavení. Nastavení ostatních parametrů zůstane uloženo, jen se v kontextovém menu žádné položka funkce hledání neobjeví.
 3. Po spuštění funkce z kontextového menu se nejdříve zobrazí možnost výběru textů z aktuální položky. Uživatel má možnost vybrat z nabízeného seznamu více položek. Ty se budou skládat jedna za druhou a budou odděleny mezerou. U některých položek (kde to není možné jednoduše odvodit) je zobrazen jejich význam (kurzívou). Platí, že všechny psané kurzívou texty se do výsledného textu nepřenáší.
-4. Pokud se některý text objeví ve více položkách (například režisér je zároveň i scénárista) a uživatel si vybere obě položky, tak ve výsledném textu bude tento text pouze jednou.
+4. Pokud se některý text objeví ve více položkách (například režisér je zároveň i scénárista) a uživatel si vybere obě položky, tak ve výsledném textu bude tento text pouze jednou. Od verze 0.1.15 je přidána možnost neprovádět výběr textů z aktuální položky. V takovém případě se do hledaného textu uloží první text z aktuální položky, což zpravidla bývá titul. V nastavení je položka pro aktivaci této možnosti označena jako - nevybírat položku hledaného textu (použije se titul) a je defaultně vypnuta. Doplněk se tedy po instalaci této verze bude chovat stále stejně jako dosud a budete-li chtít tuto možnost aktivovat, je třeba ji v nastavení zapnout.
 5. Uživatel má v této fázi možnot vybraný text buď potvrdit - tlačítko **OK** - nebo zrušit - tlačítko **Zrušit**. Pokud zvolí druhou možnost, do dalšího kroku se přenese prázdný řetezec.
-6. Následuje tradiční virtuálni klávesnice, kde si uživatel může text editovat a pak si vybrat, co bude následovat. Pokud tady zvolí tlačítko **OK**, přejde se k dalšímu kroku, pokud **Zrušit**, funkce hledání se ukončí.
+6. Následuje tradiční virtuálni klávesnice, kde si uživatel může text editovat a pak si vybrat, co bude následovat. Pokud tady zvolí tlačítko **OK**, přejde se k dalšímu kroku, pokud **Zrušit**, funkce hledání se ukončí.Od verze 0.1.15 je přidána možnost editaci textu přeskočit. V nastavení je položka pro aktivaci této možnosti označena jako - neupravovat hledaný text a je defaultně vypnuta. Doplněk se tedy po instalaci této verze bude chovat stále stejně jako dosud a budete-li chtít tuto možnost aktivovat, je třeba ji v nastavení zapnout.
 7. Posledním krokem je spuštění vlastního vyhledávání. Pokud je nastaveno **- submenu hledat** na **VYPNUTO**, tak se hledání v daném místě spustí hned po zadání **OK** v předchozím bodu. Pokud je **- submenu hledat** nastaveno na **ZAPNUTO**, objeví se seznam obsahující všechna místa, kde je možné hledat a uživatel si z nich jedno vybere. Po výběru se hledání spustí.
 
 ### To Do
 
-- hledání v Netflix - zatím nejisté, pravděpodobně to nepůjde
 - hledání v HBO - ani jsem nezačal
 - hledání v knihovně - také nejisté, ale věřím, že to nakonec dohromady dám...
 

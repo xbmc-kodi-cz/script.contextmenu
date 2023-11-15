@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.14" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.15" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -23,7 +23,7 @@
 				<label>$INFO[Window(Home).Property(contextmenu_item4_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item4_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item4_position),6)</visible>
 			</item>
-			<item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream,true" >
+			<item library="resourcestool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream,true" >
 				<label>30101</label>
 				<visible>!Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream)</visible>
 			</item>
@@ -88,23 +88,27 @@
 				<visible>Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
 			<item library="search.py" args="scc" >
-				<label>30055</label>
+				<label>30058</label>
 				<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_scc) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
 			<item library="search.py" args="ws" >
-				<label>30057</label>
+				<label>30060</label>
 				<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_ws) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
 			<item library="search.py" args="sc" >
-				<label>30059</label>
+				<label>30062</label>
 				<visible>System.AddonIsEnabled(plugin.video.stream-cinema) + Addon.SettingBool(script.contextmenu,enable_search_sc) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
+			<item library="search.py" args="netflix" >
+				<label>30071</label>
+				<visible>System.AddonIsEnabled(plugin.video.netflix) + Addon.SettingBool(script.contextmenu,enable_search_netflix) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
+			</item>
 			<item library="search.py" args="yt" >
-				<label>30064</label>
+				<label>30067</label>
 				<visible>System.AddonIsEnabled(plugin.video.youtube) + Addon.SettingBool(script.contextmenu,enable_search_yt) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
 			<item library="search.py" args="library" >
-				<label>30066</label>
+				<label>30069</label>
 				<visible>false + System.AddonIsEnabled(script.globalsearch) + Addon.SettingBool(script.contextmenu,enable_search_library) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
 			<item library="command.py" args="@item1_command,3" >
@@ -210,9 +214,9 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.14 (2023-06-24)
-- added two User items positions (-1/2 and +1/2)
-- added display of User items enable state in Items selection setting page
+		<news>v0.1.15 (2023-11-13)
+- added search in Netflix
+- added other settings for search functions
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
