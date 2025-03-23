@@ -133,9 +133,13 @@ msgctxt "#30073"
 msgid "Search in HBO Max"
 msgstr ""
 
-msgctxt "#30074"
-msgid "Search"
+msgctxt "#30075"
+msgid "Search in TMDB"
 msgstr ""
+
+msgctxt "#30076"
+msgid "Enter Search Query"
+msgstr "Enter Search Query"
 
 msgctxt "#30085"
 msgid "Genre"
@@ -155,30 +159,6 @@ msgstr ""
 
 msgctxt "#30089"
 msgid ""
-msgstr ""
-
-msgctxt "#30090"
-msgid "Content refresh"
-msgstr ""
-
-msgctxt "#30091"
-msgid "Addon setting"
-msgstr ""
-
-msgctxt "#30092"
-msgid "Menu setting"
-msgstr ""
-
-msgctxt "#30093"
-msgid "Setting"
-msgstr ""
-
-msgctxt "#30094"
-msgid "Kodi setting"
-msgstr ""
-
-msgctxt "#30095"
-msgid "Delete"
 msgstr ""
 
 msgctxt "#30100"
@@ -203,6 +183,34 @@ msgstr ""
 
 msgctxt "#30112"
 msgid "DOWNLOAD Stream to [COLOR green]MANUAL[/COLOR]"
+msgstr ""
+
+msgctxt "#30190"
+msgid "Content refresh"
+msgstr ""
+
+msgctxt "#30191"
+msgid "Addon setting"
+msgstr ""
+
+msgctxt "#30192"
+msgid "Context menu setting"
+msgstr ""
+
+msgctxt "#30193"
+msgid "Setting"
+msgstr ""
+
+msgctxt "#30194"
+msgid "Kodi setting"
+msgstr ""
+
+msgctxt "#30195"
+msgid "Delete"
+msgstr ""
+
+msgctxt "#30196"
+msgid "Addon restart"
 msgstr ""
 
 msgctxt "#30200"

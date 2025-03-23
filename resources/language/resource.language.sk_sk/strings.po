@@ -133,6 +133,14 @@ msgctxt "#30073"
 msgid "Search in HBO Max"
 msgstr "Hľadať na HBO Max"
 
+msgctxt "#30075"
+msgid "Search in TMDB"
+msgstr "Hľadať na TMDB"
+
+msgctxt "#30076"
+msgid "Enter Search Query"
+msgstr "Enter Search Query"
+
 msgctxt "#30085"
 msgid "Genre"
 msgstr "Žáner"
@@ -152,30 +160,6 @@ msgstr "Obsadenie"
 msgctxt "#30089"
 msgid "as"
 msgstr "ako"
-
-msgctxt "#30090"
-msgid "Content refresh"
-msgstr "Obnovenie obsahu"
-
-msgctxt "#30091"
-msgid "Addon setting"
-msgstr "Nastavenie doplnku"
-
-msgctxt "#30092"
-msgid "Menu setting"
-msgstr "Nastavenie menu"
-
-msgctxt "#30093"
-msgid "Setting"
-msgstr "Nastavenie"
-
-msgctxt "#30094"
-msgid "Kodi setting"
-msgstr "Nastavenie Kodi"
-
-msgctxt "#30095"
-msgid "Delete"
-msgstr "Odstrániť"
 
 msgctxt "#30100"
 msgid "SCC stream select for playing"
@@ -200,6 +184,34 @@ msgstr "DOWNLOAD Stream na [COLOR red]AUTO[/COLOR]"
 msgctxt "#30112"
 msgid "DOWNLOAD Stream to [COLOR green]MANUAL[/COLOR]"
 msgstr "DOWNLOAD Stream na [COLOR green]RUČNE[/COLOR]"
+
+msgctxt "#30190"
+msgid "Content refresh"
+msgstr "Obnovenie obsahu"
+
+msgctxt "#30191"
+msgid "Addon setting"
+msgstr "Nastavenie doplnku"
+
+msgctxt "#30192"
+msgid "Context menu setting"
+msgstr "Nastavenie kontextového menu"
+
+msgctxt "#30193"
+msgid "Setting"
+msgstr "Nastavenie"
+
+msgctxt "#30194"
+msgid "Kodi setting"
+msgstr "Nastavenie Kodi"
+
+msgctxt "#30195"
+msgid "Delete"
+msgstr "Odstrániť"
+
+msgctxt "#30196"
+msgid "Addon restart"
+msgstr "Restart doplnku"
 
 msgctxt "#30200"
 msgid "User items"

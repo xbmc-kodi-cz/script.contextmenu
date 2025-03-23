@@ -1,3 +1,7 @@
+v0.1.16 (2025-03-23)
+- added search in TMDb (TMDb Helper) - with limited functonality due to a bug in TMDb Helper
+- minor text corrections
+
 v0.1.15 (2023-11-13)
 - added search in Netflix
 - added other settings for search functions

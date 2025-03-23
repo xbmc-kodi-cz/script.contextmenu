@@ -5,6 +5,8 @@ import xbmcaddon
 import xbmcgui
 import re
 
+from urllib.parse import quote
+
 from resources.lib.utils import getParam, getSettingBool, localizedStr, logNot, logErr, mediaFile
 from resources.lib.patterns import selectPattern
 
@@ -47,6 +49,12 @@ YT_ENABLE = 'enable_search_yt'
 YT_COMMAND = '/kodion/search/query/?{}'
 YT_URL = 'q=({0})'
 
+TMDB_ADDON = 'plugin.video.themoviedb.helper'
+TMDB_ENABLE = 'enable_search_tmdb'
+TMDB_COMMAND = '{}'
+TMDB_URL = '/?info=search&amp;query={}&amp;tmdb_type=both'
+TMDB_URL = '/?info=search&amp;tmdb_type=both&amp;query={}'
+
 WHERE = 0
 ADDON = 1
 ENABLE = 2
@@ -58,6 +66,7 @@ BUILTIN = 7
 ENCODE = 8
 
 PARAMETERS = [
+['tmdb', TMDB_ADDON, TMDB_ENABLE, 30075, 30076, TMDB_URL, TMDB_COMMAND, None, None],
 ['scc', SCC_ADDON, SCC_ENABLE, 30058, 30059, SCC_URL, SCC_COMMAND, None, None],
 ['ws', SCC_ADDON, WS_ENABLE, 30060, 30061, WS_URL, WS_COMMAND, None, None],
 ['sc', SC_ADDON, SC_ENABLE, 30062, 30063, SC_URLS[0], SC_COMMAND, None, 'HEX'],
@@ -132,7 +141,7 @@ if __name__ == '__main__':
         if goSearch:
             logNot('Select: {}'.format(select))
             parameter = parameters[select]
-            searchUrl = setUrl(searchString, parameter[URL], encode = parameter[ENCODE])
+            searchUrl = setUrl(quote(searchString), parameter[URL], encode = parameter[ENCODE])
             addonCommand = setUrl(searchUrl, parameter[COMMAND])
             builtinCommand = setUrl(addonCommand, parameter[BUILTIN], parameter[ADDON])
             logNot('Start search based on the builtin command: {}'.format(builtinCommand))

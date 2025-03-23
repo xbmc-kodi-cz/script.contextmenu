@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.15" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.16" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -87,6 +87,10 @@
 				<label>30051</label>
 				<visible>Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
+			<item library="search.py" args="tmdb" >
+				<label>30075</label>
+				<visible>System.AddonIsEnabled(plugin.video.themoviedb.helper) + Addon.SettingBool(script.contextmenu,enable_search_tmdb) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
+			</item>
 			<item library="search.py" args="scc" >
 				<label>30058</label>
 				<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_scc) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
@@ -128,11 +132,11 @@
 				<visible>Addon.SettingBool(script.contextmenu,item4_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item4_position),3)</visible>
 			</item>
 			<item library="command.py" args="Container.Refresh()" >
-				<label>30090</label>
+				<label>30190</label>
 				<visible>!String.IsEmpty(Container.FolderPath) + Addon.SettingBool(script.contextmenu,enable_content_refresh)</visible>
 			</item>
 			<item library="command.py" args="Action(Delete)" >
-				<label>30095</label>
+				<label>30195</label>
 				<visible>Addon.SettingBool(script.contextmenu,enable_delete)</visible>
 			</item>
 			<item library="command.py" args="@item1_command,2" >
@@ -151,32 +155,40 @@
 				<label>$INFO[Window(Home).Property(contextmenu_item4_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item4_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item4_position),2)</visible>
 			</item>
+			<!-- <item library="restart.py" > -->
+				<!-- <label>30196</label> -->
+				<!-- <visible>Addon.SettingBool(script.contextmenu,enable_addon_restart)</visible> -->
+			<!-- </item> -->
 			<item library="setting.py" >
-				<label>30091</label>
+				<label>30191</label>
 				<visible>!String.IsEmpty(Container.PluginName) + Addon.SettingBool(script.contextmenu,enable_addon_setting)</visible>
 			</item>
 			<item library="settingwidget.py" >
-				<label>30091</label>
+				<label>30191</label>
 				<visible>String.IsEmpty(Container.PluginName) + !String.IsEmpty(ListItem.Path) + !String.IsEqual(ListItem.Path,plugin://) + !String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) + String.StartsWith(ListItem.Path,plugin://) + Addon.SettingBool(script.contextmenu,enable_addon_setting)</visible>
 			</item>
 			<item library="settingscc.py" >
-				<label>30091</label>
+				<label>30191</label>
 				<visible>String.IsEmpty(Container.PluginName) + [String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_addon_setting)</visible>
 			</item>
 			<item library="command.py" args="ActivateWindow(settings)" >
-				<label>30094</label>
+				<label>30194</label>
 				<visible>Addon.SettingBool(script.contextmenu,enable_setting)</visible>
 			</item>
 			<item library="command.py" args="Addon.OpenSettings(script.contextmenu)" >
-				<label>30092</label>
+				<label>30192</label>
 				<visible>Addon.SettingBool(script.contextmenu,enable_self_setting)</visible>
 			</item>
-			<item library="iteminfo.py" >
-				<label>30040</label>
-				<visible>!String.IsEmpty(Container.Content) + Addon.SettingBool(script.contextmenu,enable_iteminfo)</visible>
+			<!-- <item library="iteminfo.py" > -->
+				<!-- <label>30040</label> -->
+				<!-- <visible>Skin.HasSetting(easy_master) + !String.IsEmpty(Container.Content) + Addon.SettingBool(script.contextmenu,enable_iteminfo)</visible> -->
+			<!-- </item> -->
+			<item library=".restart.py" >
+				<label>[COLOR red]Restart pvr.hts[/COLOR]</label>
+				<visible>Skin.HasSetting(easy_master)</visible>
 			</item>
 			<item library=".dump.py" >
-				<label>Item Dump</label>
+				<label>[COLOR blue]Item Dump[/COLOR]</label>
 				<visible>Skin.HasSetting(easy_master)</visible>
 			</item>
 			<item library="command.py" args="@item1_command,1" >
@@ -214,9 +226,9 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.15 (2023-11-13)
-- added search in Netflix
-- added other settings for search functions
+		<news>v0.1.16 (2024-08-11)
+- added addon restart possibility 
+- minor text corrections
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
