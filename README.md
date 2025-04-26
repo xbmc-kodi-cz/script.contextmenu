@@ -23,6 +23,7 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 - **Uživatelsky definované položky** - pozice označená jako **-1/2**
 - **Hledat...** - spustí funkce Hledat v případě, že je položka nastavení **- submenu hledat** ve stavu **ZAPNUTO**, viz popis funkce hledání dále
 - **Hledat v TMDb** - spustí funkci Hledat z doplňku TMDb Helper. Hledání v TMDb Helper má omezené chování kvůli bug-u v samotném doplňku, který v přípdě, že hledaný titul nenajde, končí s chybou. - viz popis funkce hledání dále
+- **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku YAWSP - viz popis funkce hledání dále
 - **Hledat v SCC** - spustí funkci Hledat z doplňku SCC - viz popis funkce hledání dále
 - **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - viz popis funkce hledání dále
 - **Hledat v SC** - spustí funkci Hledat z doplňku SC - viz popis funkce hledání dále

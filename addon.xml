@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.16" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.17" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -226,9 +226,8 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.16 (2024-08-11)
-- added addon restart possibility 
-- minor text corrections
+		<news>v0.1.17 (2025-04-26)
+- added search in Webshare via YAWSP plugin
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>

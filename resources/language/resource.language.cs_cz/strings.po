@@ -141,6 +141,14 @@ msgctxt "#30076"
 msgid "Enter Search Query"
 msgstr "Enter Search Query"
 
+msgctxt "#30077"
+msgid "Search in Webshare"
+msgstr "Hledat na Webshare"
+
+msgctxt "#30078"
+msgid "File Name"
+msgstr "Jméno souboru"
+
 msgctxt "#30085"
 msgid "Genre"
 msgstr "Žánr"

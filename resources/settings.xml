@@ -38,13 +38,14 @@
         <setting label="30053" subsetting="true" id="no_pattern_select" type="bool" default="false" />
         <setting label="30054" subsetting="true" id="no_text_edit" type="bool" default="false" />
         <setting label="30075" id="enable_search_tmdb" type="bool" default="false" enable="eq(-4,true)" visible="System.AddonIsEnabled(plugin.video.themoviedb.helper)" />
-        <setting label="30058" id="enable_search_scc" type="bool" default="false" enable="eq(-5,true)" visible="System.AddonIsEnabled(plugin.video.stream-cinema-2-release)" />
-        <setting label="30060" id="enable_search_ws" type="bool" default="false" enable="eq(-6,true)" visible="System.AddonIsEnabled(plugin.video.stream-cinema-2-release)" />
-        <setting label="30062" id="enable_search_sc" type="bool" default="false" enable="eq(-7,true)" visible="System.AddonIsEnabled(plugin.video.stream-cinema)" />
-        <setting label="30071" id="enable_search_netflix" type="bool" default="false" enable="eq(-8,true)" visible="System.AddonIsEnabled(plugin.video.netflix)" />
-        <setting label="30072" id="enable_search_hbo" type="bool" default="false" enable="eq(-9,true)" visible="false + System.AddonIsEnabled(slyguy.hbo.max)" />
-        <setting label="30067" id="enable_search_yt" type="bool" default="false" enable="eq(-10,true)" visible="System.AddonIsEnabled(plugin.video.youtube)" />
-        <setting label="30069" id="enable_search_library" type="bool" default="false" enable="eq(-11,true)" visible="false" />
+        <setting label="30077" id="enable_search_yawsp" type="bool" default="false" enable="eq(-5,true)" visible="System.AddonIsEnabled(plugin.video.yawsp)" />
+        <setting label="30058" id="enable_search_scc" type="bool" default="false" enable="eq(-6,true)" visible="System.AddonIsEnabled(plugin.video.stream-cinema-2-release)" />
+        <setting label="30060" id="enable_search_ws" type="bool" default="false" enable="eq(-7,true)" visible="System.AddonIsEnabled(plugin.video.stream-cinema-2-release)" />
+        <setting label="30062" id="enable_search_sc" type="bool" default="false" enable="eq(-8,true)" visible="System.AddonIsEnabled(plugin.video.stream-cinema)" />
+        <setting label="30071" id="enable_search_netflix" type="bool" default="false" enable="eq(-9,true)" visible="System.AddonIsEnabled(plugin.video.netflix)" />
+        <setting label="30072" id="enable_search_hbo" type="bool" default="false" enable="eq(-10,true)" visible="false + System.AddonIsEnabled(slyguy.hbo.max)" />
+        <setting label="30067" id="enable_search_yt" type="bool" default="false" enable="eq(-11,true)" visible="System.AddonIsEnabled(plugin.video.youtube)" />
+        <setting label="30069" id="enable_search_library" type="bool" default="false" enable="eq(-12,true)" visible="false" />
         <setting id="item1_position" type="enum" visible="false" />
         <setting label="$INFO[Window(Home).Property(contextmenu_item1_name)]" id="item1_enable" type="bool" visible="eq(-1,3)" />
         <setting id="item2_position" type="enum" visible="false" />

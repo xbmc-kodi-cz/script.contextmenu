@@ -13,7 +13,7 @@ from resources.lib.patterns import selectPattern
 TEXT_SEARCH_HEADER = 30051
 TEXT_SEARCH_PROMPT = 30056
 
-COMMON_BUILTIN = 'ActivateWindow(videos,plugin://{}{},return)'
+COMMON_BUILTIN = 'ActivateWindow(videos,"plugin://{}{}",return)'
 
 SCC_ADDON = 'plugin.video.stream-cinema-2-release'
 SCC_ENABLE = 'enable_search_scc'
@@ -52,8 +52,12 @@ YT_URL = 'q=({0})'
 TMDB_ADDON = 'plugin.video.themoviedb.helper'
 TMDB_ENABLE = 'enable_search_tmdb'
 TMDB_COMMAND = '{}'
-TMDB_URL = '/?info=search&amp;query={}&amp;tmdb_type=both'
-TMDB_URL = '/?info=search&amp;tmdb_type=both&amp;query={}'
+TMDB_URL = '/?info=search&tmdb_type=both&query={}'
+
+YAWSP_ADDON = 'plugin.video.yawsp'
+YAWSP_ENABLE = 'enable_search_yawsp'
+YAWSP_COMMAND = '{}'
+YAWSP_URL = '/?action=search&what={}'
 
 WHERE = 0
 ADDON = 1
@@ -67,6 +71,7 @@ ENCODE = 8
 
 PARAMETERS = [
 ['tmdb', TMDB_ADDON, TMDB_ENABLE, 30075, 30076, TMDB_URL, TMDB_COMMAND, None, None],
+['yawsp', YAWSP_ADDON, YAWSP_ENABLE, 30077, 30078, YAWSP_URL, YAWSP_COMMAND, None, None],
 ['scc', SCC_ADDON, SCC_ENABLE, 30058, 30059, SCC_URL, SCC_COMMAND, None, None],
 ['ws', SCC_ADDON, WS_ENABLE, 30060, 30061, WS_URL, WS_COMMAND, None, None],
 ['sc', SC_ADDON, SC_ENABLE, 30062, 30063, SC_URLS[0], SC_COMMAND, None, 'HEX'],
@@ -141,10 +146,14 @@ if __name__ == '__main__':
         if goSearch:
             logNot('Select: {}'.format(select))
             parameter = parameters[select]
+            logNot('Parameter: {}'.format(parameter))
             searchUrl = setUrl(quote(searchString), parameter[URL], encode = parameter[ENCODE])
+            logNot('searchUrl: {}'.format(searchUrl))
             addonCommand = setUrl(searchUrl, parameter[COMMAND])
+            logNot('addonCommand: {}'.format(addonCommand))
             builtinCommand = setUrl(addonCommand, parameter[BUILTIN], parameter[ADDON])
             logNot('Start search based on the builtin command: {}'.format(builtinCommand))
+            # builtinCommand = 'ActivateWindow(videos,''plugin://plugin.video.yawsp/?action=search&amp;what=Arved'',return)'
             xbmc.executebuiltin(builtinCommand)
         else:
             nothingToDo()
