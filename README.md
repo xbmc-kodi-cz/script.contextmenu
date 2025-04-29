@@ -15,8 +15,8 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 ### Dostupné položky a jejich funkce
 
 - **Uživatelsky definované položky** - pozice označená jako **Horní**
-- **Automatický výběr streamu SCC pro přehrávání** - změní stav Automatický výběr streamu pro přehrávání v nastavení doplňku SCC v sekci Streamy. Funguje jako tzv. "toggle". Zároveň se v kontextovém menu zobrazuje stav do kterého se po jeho aktivaci nastavení přepne (AUTO/RUČNĚ).
-- **Automatický výběr streamu SCC pro stahování** - změní stav Automatický výběr streamu pro stahování v nastavení doplňku SCC v sekci Streamy. Funguje jako tzv. "toggle". Zároveň se v kontextovém menu zobrazuje stav do kterého se po jeho aktivaci nastavení přepne (AUTO/RUČNĚ).
+- DELETED **Automatický výběr streamu SCC pro přehrávání** - změní stav Automatický výběr streamu pro přehrávání v nastavení doplňku SCC v sekci Streamy. Funguje jako tzv. "toggle". Zároveň se v kontextovém menu zobrazuje stav do kterého se po jeho aktivaci nastavení přepne (AUTO/RUČNĚ).
+- DELETED **Automatický výběr streamu SCC pro stahování** - změní stav Automatický výběr streamu pro stahování v nastavení doplňku SCC v sekci Streamy. Funguje jako tzv. "toggle". Zároveň se v kontextovém menu zobrazuje stav do kterého se po jeho aktivaci nastavení přepne (AUTO/RUČNĚ).
 - **Uživatelsky definované položky** - pozice označená jako **1/4**
 - **Přehrát upoutávku** - spustí přehrávání upoutávky (trailer-u), pokud existuje. V tomto případě se (zatím) v doplňku nekontroluje, zda jsou případně k dispozici doplňky, kterými se upoutávky přehrávají (Youtube, Tubed atp.)
 - **Hledat upoutávku** - vyhledá v Youtube upoutávku podle titulu (i Originálního, pokud existuje) aktuání položky, text hledaného titulu, případně i originálního titulu, je v hledaném řetězci doplněn klíčovými slovy trailer a teaser
@@ -25,8 +25,8 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 - **Hledat v TMDb** - spustí funkci Hledat z doplňku TMDb Helper. Hledání v TMDb Helper má omezené chování kvůli bug-u v samotném doplňku, který v přípdě, že hledaný titul nenajde, končí s chybou. - viz popis funkce hledání dále
 - **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku YAWSP - viz popis funkce hledání dále
 - **Hledat v SCC** - spustí funkci Hledat z doplňku SCC - viz popis funkce hledání dále
-- **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - viz popis funkce hledání dále
-- **Hledat v SC** - spustí funkci Hledat z doplňku SC - viz popis funkce hledání dále
+- DELETED **Hledat na Webshare** - spustí funkci Hledat na Webshare z doplňku SCC - viz popis funkce hledání dále
+- DELETED **Hledat v SC** - spustí funkci Hledat z doplňku SC - viz popis funkce hledání dále
 - **Hledat v Netflix** - spustí funkci Hledat z doplňku Netflix - viz popis funkce hledání dále
 - **Hledat na Youtube** - spustí funkci Hledat z doplňku Youtube - viz popis funkce hledání dále
 - **Uživatelsky definované položky** - pozice označená jako **+1/2**

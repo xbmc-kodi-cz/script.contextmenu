@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.17" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.18" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -23,22 +23,22 @@
 				<label>$INFO[Window(Home).Property(contextmenu_item4_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item4_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item4_position),6)</visible>
 			</item>
-			<item library="resourcestool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream,true" >
-				<label>30101</label>
-				<visible>!Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream)</visible>
-			</item>
-			<item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream,false" >
-				<label>30102</label>
-				<visible>Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream)</visible>
-			</item>
-			<item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream.download,true" >
-				<label>30111</label>
-				<visible>!Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream.download) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream.download)</visible>
-			</item>
-			<item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream.download,false" >
-				<label>30112</label>
-				<visible>Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream.download) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream.download)</visible>
-			</item>
+			<!-- <item library="resourcestool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream,true" > -->
+				<!-- <label>30101</label> -->
+				<!-- <visible>!Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream)</visible> -->
+			<!-- </item> -->
+			<!-- <item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream,false" > -->
+				<!-- <label>30102</label> -->
+				<!-- <visible>Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream)</visible> -->
+			<!-- </item> -->
+			<!-- <item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream.download,true" > -->
+				<!-- <label>30111</label> -->
+				<!-- <visible>!Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream.download) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream.download)</visible> -->
+			<!-- </item> -->
+			<!-- <item library="tool.py" args="plugin.video.stream-cinema-2-release,auto_select_stream.download,false" > -->
+				<!-- <label>30112</label> -->
+				<!-- <visible>Addon.SettingBool(plugin.video.stream-cinema-2-release,auto_select_stream.download) + System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + [String.IsEqual(Container.PluginName,plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_select_stream.download)</visible> -->
+			<!-- </item> -->
 			<item library="command.py" args="@item1_command,5" >
 				<label>$INFO[Window(Home).Property(contextmenu_item1_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item1_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item1_position),5)</visible>
@@ -91,14 +91,18 @@
 				<label>30075</label>
 				<visible>System.AddonIsEnabled(plugin.video.themoviedb.helper) + Addon.SettingBool(script.contextmenu,enable_search_tmdb) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
-			<item library="search.py" args="scc" >
-				<label>30058</label>
-				<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_scc) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
+			<item library="search.py" args="yawsp" >
+				<label>30077</label>
+				<visible>System.AddonIsEnabled(plugin.video.yawsp) + Addon.SettingBool(script.contextmenu,enable_search_yawsp) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
-			<item library="search.py" args="ws" >
-				<label>30060</label>
-				<visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_ws) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
-			</item>
+			<!-- <item library="search.py" args="scc" > -->
+				<!-- <label>30058</label> -->
+				<!-- <visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_scc) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible> -->
+			<!-- </item> -->
+			<!-- <item library="search.py" args="ws" > -->
+				<!-- <label>30060</label> -->
+				<!-- <visible>System.AddonIsEnabled(plugin.video.stream-cinema-2-release) + Addon.SettingBool(script.contextmenu,enable_search_ws) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible> -->
+			<!-- </item> -->
 			<item library="search.py" args="sc" >
 				<label>30062</label>
 				<visible>System.AddonIsEnabled(plugin.video.stream-cinema) + Addon.SettingBool(script.contextmenu,enable_search_sc) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
@@ -226,8 +230,8 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.17 (2025-04-26)
-- added search in Webshare via YAWSP plugin
+		<news>v0.1.18 (2025-04-29)
+- fixed search in YAWSP error
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>

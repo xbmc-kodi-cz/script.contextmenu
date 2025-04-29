@@ -1,3 +1,6 @@
+v0.1.18 (2025-04-29)
+- fixed search in YAWSP error
+
 v0.1.17 (2025-04-26)
 - added search in Webshare via YAWSP plugin
 

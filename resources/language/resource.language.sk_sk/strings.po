@@ -1,14 +1,14 @@
 # XBMC Media Center language file
 # Addon Name: Context Menu
 # Addon id: script.contextmenu
-# Addon version: 0.1.15
+# Addon version: 0.1.18
 # Addon Provider: JiRo
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: ?\n"
 "POT-Creation-Date: 2023-05-03\n"
-"PO-Revision-Date: 2023-11-15\n"
+"PO-Revision-Date: 2025-04-29\n"
 "Last-Translator: JiRo\n"
 "Language-Team: JiRo\n"
 "MIME-Version: 1.0\n"
