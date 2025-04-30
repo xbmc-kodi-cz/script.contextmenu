@@ -29,6 +29,7 @@ V doplňku v současné verzi fungují tři úrovně výběru položek v menu (a
 - DELETED **Hledat v SC** - spustí funkci Hledat z doplňku SC - viz popis funkce hledání dále
 - **Hledat v Netflix** - spustí funkci Hledat z doplňku Netflix - viz popis funkce hledání dále
 - **Hledat na Youtube** - spustí funkci Hledat z doplňku Youtube - viz popis funkce hledání dále
+- **Smart hledání TMDb - Webshare** - spustí funkci Smart hledání z TMDb Helper doplňku na Webshare prostřednictvím doplňku YAWSP
 - **Uživatelsky definované položky** - pozice označená jako **+1/2**
 - **Obnovení obsahu** - provede tzv. **Refresh**, tedy nové načtení aktuálně zobrazeného seznamu
 - **Odstranit** - u položky, kde je to v rámci Kodi možné a povolené, se provede její "odstranění". Odstraněním je míněná akce (Action ID Delete) v daném kontextu, dle typu a stavu položky. Pokdu není v daném kontextu tato akce definovaná, neprovede se samozřejmě nic.
