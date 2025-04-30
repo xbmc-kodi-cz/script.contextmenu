@@ -1,14 +1,14 @@
 # XBMC Media Center language file
 # Addon Name: Context Menu
 # Addon id: script.contextmenu
-# Addon version: 0.1.18
+# Addon version: 0.1.19
 # Addon Provider: JiRo
 msgid ""
 msgstr ""
 "Project-Id-Version: Kodi Addons\n"
 "Report-Msgid-Bugs-To: ?\n"
 "POT-Creation-Date: 2020-07-22\n"
-"PO-Revision-Date: 2025-04-29\n"
+"PO-Revision-Date: 2025-04-30\n"
 "Last-Translator: JiRo\n"
 "Language-Team: JiRo\n"
 "MIME-Version: 1.0\n"
@@ -147,6 +147,10 @@ msgstr ""
 
 msgctxt "#30078"
 msgid "File Name"
+msgstr ""
+
+msgctxt "#30083"
+msgid "Smart Search TMDb - Webshare"
 msgstr ""
 
 msgctxt "#30085"

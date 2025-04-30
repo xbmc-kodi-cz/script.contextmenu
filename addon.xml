@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.18" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.19" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -119,6 +119,10 @@
 				<label>30069</label>
 				<visible>false + System.AddonIsEnabled(script.globalsearch) + Addon.SettingBool(script.contextmenu,enable_search_library) + !Addon.SettingBool(script.contextmenu,common_item_search) + Addon.SettingBool(script.contextmenu,enable_search)</visible>
 			</item>
+			<item library="smartsearch.py" args="default" >
+				<label>30083</label>
+				<visible>Addon.SettingBool(script.contextmenu,enable_smartsearch) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + System.AddonIsEnabled(plugin.video.yawsp) + String.StartsWith(ListItem.Path,plugin://plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.DBTYPE)</visible>
+			</item>
 			<item library="command.py" args="@item1_command,3" >
 				<label>$INFO[Window(Home).Property(contextmenu_item1_name)]</label>
 				<visible>Addon.SettingBool(script.contextmenu,item1_enable) + Integer.IsEqual(Addon.SettingInt(script.contextmenu,item1_position),3)</visible>
@@ -171,10 +175,10 @@
 				<label>30191</label>
 				<visible>String.IsEmpty(Container.PluginName) + !String.IsEmpty(ListItem.Path) + !String.IsEqual(ListItem.Path,plugin://) + !String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) + String.StartsWith(ListItem.Path,plugin://) + Addon.SettingBool(script.contextmenu,enable_addon_setting)</visible>
 			</item>
-			<item library="settingscc.py" >
-				<label>30191</label>
-				<visible>String.IsEmpty(Container.PluginName) + [String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_addon_setting)</visible>
-			</item>
+			<!-- <item library="settingscc.py" > -->
+				<!-- <label>30191</label> -->
+				<!-- <visible>String.IsEmpty(Container.PluginName) + [String.StartsWith(ListItem.Path,plugin://plugin.video.stream-cinema-2-release) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,movie_library_folder)) | String.StartsWith(ListItem.Path,Addon.SettingStr(plugin.video.stream-cinema-2-release,tvshow_library_folder))] + Addon.SettingBool(script.contextmenu,enable_addon_setting)</visible> -->
+			<!-- </item> -->
 			<item library="command.py" args="ActivateWindow(settings)" >
 				<label>30194</label>
 				<visible>Addon.SettingBool(script.contextmenu,enable_setting)</visible>
@@ -230,8 +234,8 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.18 (2025-04-29)
-- fixed search in YAWSP error
+		<news>v0.1.19 (2025-04-30)
+- added Smart Search from TMDb (TMDb Helper) in Webshare via YAWSP plugin
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>

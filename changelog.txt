@@ -1,3 +1,6 @@
+v0.1.19 (2025-04-30)
+- added Smart Search from TMDb (TMDb Helper) in Webshare via YAWSP plugin
+
 v0.1.18 (2025-04-29)
 - fixed search in YAWSP error
 

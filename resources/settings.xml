@@ -46,6 +46,8 @@
         <setting label="30072" id="enable_search_hbo" type="bool" default="false" enable="eq(-10,true)" visible="false + System.AddonIsEnabled(slyguy.hbo.max)" />
         <setting label="30067" id="enable_search_yt" type="bool" default="false" enable="eq(-11,true)" visible="System.AddonIsEnabled(plugin.video.youtube)" />
         <setting label="30069" id="enable_search_library" type="bool" default="false" enable="eq(-12,true)" visible="false" />
+		<setting type="lsep"/>
+        <setting label="30083" id="enable_smartsearch" type="bool" default="false" enable="true" visible="System.AddonIsEnabled(plugin.video.themoviedb.helper) + System.AddonIsEnabled(plugin.video.yawsp)" />
         <setting id="item1_position" type="enum" visible="false" />
         <setting label="$INFO[Window(Home).Property(contextmenu_item1_name)]" id="item1_enable" type="bool" visible="eq(-1,3)" />
         <setting id="item2_position" type="enum" visible="false" />
