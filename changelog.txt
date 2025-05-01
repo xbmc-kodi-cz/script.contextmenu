@@ -1,8 +1,11 @@
+v0.1.20 (2025-05-01)
+- minor changes in addon.xml
+
 v0.1.19 (2025-04-30)
 - added Smart Search from TMDb (TMDb Helper) in Webshare via YAWSP plugin
 
 v0.1.18 (2025-04-29)
-- fixed search in YAWSP error
+- fixed Search in YAWSP error
 
 v0.1.17 (2025-04-26)
 - added search in Webshare via YAWSP plugin

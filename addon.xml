@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="script.contextmenu" version="0.1.19" name="Context Menu" provider-name="JiRo">
+<addon id="script.contextmenu" version="0.1.20" name="Context Menu" provider-name="JiRo">
     <requires>
         <import addon="xbmc.python" version="3.0.1" />
     </requires>
@@ -234,8 +234,8 @@
 		<website></website>
 		<email></email>
 		<source></source>
-		<news>v0.1.19 (2025-04-30)
-- added Smart Search from TMDb (TMDb Helper) in Webshare via YAWSP plugin
+		<news>v0.1.20 (2025-05-01)
+- minor changes in addon.xml
 		</news>
 		<assets>
 			<icon>resources/icon.png</icon>
