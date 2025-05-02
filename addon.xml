@@ -121,7 +121,7 @@
 			</item>
 			<item library="smartsearch.py" args="default" >
 				<label>30083</label>
-				<visible>Addon.SettingBool(script.contextmenu,enable_smartsearch) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + System.AddonIsEnabled(plugin.video.yawsp) + String.StartsWith(ListItem.Path,plugin://plugin.video.themoviedb.helper) + !String.IsEmpty(ListItem.DBTYPE)</visible>
+				<visible>Addon.SettingBool(script.contextmenu,enable_smartsearch) + System.AddonIsEnabled(plugin.video.themoviedb.helper) + System.AddonIsEnabled(plugin.video.yawsp) + String.StartsWith(ListItem.Path,plugin://plugin.video.themoviedb.helper) + String.IsEmpty(ListItem.DBTYPE)</visible>
 			</item>
 			<item library="command.py" args="@item1_command,3" >
 				<label>$INFO[Window(Home).Property(contextmenu_item1_name)]</label>
