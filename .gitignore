@@ -1,7 +1,0 @@
-__pycache__/
-.git
-.gitattributes
-.gitignore
-.dump.py
-.iteminfo.py
-.restart.py
